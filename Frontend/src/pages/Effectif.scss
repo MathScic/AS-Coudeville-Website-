@@ -1,0 +1,25 @@
+.effectif {
+  padding: 20px;
+
+  .categorie-section {
+    margin-bottom: 40px;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    .joueur-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2rem;
+      justify-items: center;
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
