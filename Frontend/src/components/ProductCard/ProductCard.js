@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductCard.scss";
+import "../ProductCard/ProductCard.scss";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartAction";
 

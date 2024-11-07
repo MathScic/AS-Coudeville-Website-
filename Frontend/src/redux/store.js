@@ -1,8 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit"; // Importer configureStore de redux-toolkit
-import rootReducer from "../redux/reducers"; // Assurez-vous que votre reducer est importé correctement
+import { createStore, applyMiddleware } from "redux";
+import rootReducer from "../redux/reducers/rootReducer";
+import { thunk } from "redux-thunk"; // Modification ici
 
-const store = configureStore({
-  reducer: rootReducer, // Utilisation du rootReducer pour combiner tous les reducers
-});
+const store = createStore(
+  rootReducer,
+  applyMiddleware(thunk) // Assure-toi d'utiliser `applyMiddleware` pour appliquer `thunk`
+);
 
 export default store;
